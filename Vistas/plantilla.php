@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portal-Magico</title>
-  <link href="Vistas/Dep/bootstrap/bootstrap.min.css" rel="stylesheet"></head>
+  <link href="Vistas/Dep/bootstrap/bootstrap.css.map" rel="stylesheet">
+  <link href="Vistas/Dep/bootstrap/bootstrap.min.css" rel="stylesheet">
+</head>
 <body>
   <?php require_once("Vistas/Modulos/nav.php"); ?>
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
