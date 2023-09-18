@@ -12,12 +12,19 @@
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
     data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
     <?php 
-      require_once("Vistas/paginas/inicio.php"); 
-      require_once("Vistas/paginas/historia.php"); 
-      require_once("Vistas/paginas/nosotros.php"); 
-      require_once("Vistas/paginas/servicios.php"); 
-      require_once("Vistas/paginas/contacto.php"); 
-      require_once("Vistas/paginas/ayuda.php");
+      #if (isset($_SESSION['Admin'])) {
+      #  if ($_SESSION['Admin'] == "okBd") {
+          $admin = new AdminCtlr; $admin -> ingreso_ctlr();
+                    
+      #  }       
+      #}else{
+        require_once("Vistas/paginas/inicio.php"); 
+        require_once("Vistas/paginas/historia.php"); 
+        require_once("Vistas/paginas/nosotros.php"); 
+        require_once("Vistas/paginas/servicios.php"); 
+        require_once("Vistas/paginas/contacto.php"); 
+        require_once("Vistas/paginas/ayuda.php");
+      #}
     ?>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

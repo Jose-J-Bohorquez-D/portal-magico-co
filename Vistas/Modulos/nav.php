@@ -1,4 +1,4 @@
-<nav id="navbar-example2" class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark" px-3 mb-3">
+<nav id="navbar-example2" class="navbar navbar-expand-lg bg-dark sticky-top px-3 mb-3" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand text-success" href="#">Portal-Magico</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
@@ -28,7 +28,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
+          <a class="nav-link" href="index.php#contacto">Contacto</a>
         </li>
       </ul>
       <button type="button" class="btn btn-outline-success" style="margin-left: auto;" data-bs-toggle="modal"
@@ -38,34 +38,25 @@
     </div>
   </div>
 </nav>
-
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title text-center">Ingreso Para Administracion</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"></span>
-        </button>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingreso Para Administracion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <form method="post">
-          <div class="form-group text-center">
-            <label for="exampleInputEmail1" class="form-label mt-4">Usuario</label>
-            <input name="emailIngreso" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group text-center">
-            <label for="exampleInputPassword1" class="form-label mt-4">Contraseña</label>
-            <input name="pwdIngreso" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off">
-          </div>
-      </div>
-      <br>
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-primary">Ingresar</button>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        </form>
-      </div>
+      <form method="post">
+        <div class="modal-body text-center">
+          <label class="">Usuario</label>
+          <input type="text" name="usu_ing" class="form-control" placeholder="example@example.com"><br>
+          <label class="">Contraseña</label>
+          <input type="password" name="pwd_ing" class="form-control" placeholder="examplepassword"><br>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <input type="submit" class="btn btn-primary" value="Ingresar">
+        </div>
+      </form>
     </div>
   </div>
 </div>
