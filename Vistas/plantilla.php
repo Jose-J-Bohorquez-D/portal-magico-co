@@ -12,6 +12,7 @@
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
     data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
     <?php 
+      require_once("Vistas/paginas/admin.php");
       require_once("Vistas/paginas/inicio.php"); 
       require_once("Vistas/paginas/historia.php"); 
       require_once("Vistas/paginas/nosotros.php"); 

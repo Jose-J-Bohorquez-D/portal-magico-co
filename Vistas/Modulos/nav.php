@@ -49,20 +49,20 @@
         </button>
       </div>
       <div class="modal-body">
-        <form method="post">
+        <form method="get">
           <div class="form-group text-center">
             <label for="exampleInputEmail1" class="form-label mt-4">Usuario</label>
-            <input name="emailIngreso" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <input name="ui" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group text-center">
             <label for="exampleInputPassword1" class="form-label mt-4">Contraseña</label>
-            <input name="pwdIngreso" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off">
+            <input name="pi" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off">
           </div>
       </div>
       <br>
       <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-primary">Ingresar</button>
+        <input type="submit" class="btn btn-primary" value="Ingresar">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
         </form>
       </div>
