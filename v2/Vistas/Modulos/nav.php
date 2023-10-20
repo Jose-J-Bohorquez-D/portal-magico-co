@@ -32,7 +32,7 @@
         </li>
       </ul>
       <?php 
-      if (isset($_SESSION['sesionActivaUsu'] )) {
+      if (!isset($_SESSION['sesionActivaUsu'])) {
         echo '
         <button type="button" class="btn btn-outline-success" style="margin-left: auto;" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Ingresar

@@ -14,15 +14,20 @@
   <?php require_once("Vistas/Modulos/nav.php"); ?>
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
     <?php 
-      if (!isset($_SESSION['sesionActivaUsu'] )) {
-        require_once("Vistas/paginas/admin.php");
+      if (isset($_SESSION['sesionActivaUsu']) && $_SESSION['sesionActivaUsu'] == "true") {
+        require_once("Vistas/Admin/Paginas/admin.php");
+        $admin = new Ctlr_Mvc();
+        $admin -> redirecciones_ctlr();
+      } else {
+        require_once("Vistas/Public/Paginas/inicio.php");
+        require_once("Vistas/Public/Paginas/historia.php");
+        require_once("Vistas/Public/Paginas/nosotros.php");
+        require_once("Vistas/Public/Paginas/servicios.php");
+        require_once("Vistas/Public/Paginas/contacto.php");
+        require_once("Vistas/Public/Paginas/ayuda.php");
       }
-      require_once("Vistas/paginas/inicio.php"); 
-      require_once("Vistas/paginas/historia.php"); 
-      require_once("Vistas/paginas/nosotros.php"); 
-      require_once("Vistas/paginas/servicios.php"); 
-      require_once("Vistas/paginas/contacto.php"); 
-      require_once("Vistas/paginas/ayuda.php");
+
+
     ?>
   </div>
 
