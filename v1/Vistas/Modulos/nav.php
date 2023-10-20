@@ -42,7 +42,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-<<<<<<< HEAD
+
         <h5 class="modal-title text-center">Ingreso Para Administracion</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true"></span>
@@ -65,10 +65,10 @@
         <input type="submit" class="btn btn-primary" value="Ingresar">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
         </form>
-=======
+
         <h1 class="modal-title fs-5" id="exampleModalLabel">Ingreso Para Administracion</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
->>>>>>> 0f59b9d665029845f9f8635619250fd2c34b3884
+
       </div>
       <form method="post">
         <div class="modal-body text-center">
