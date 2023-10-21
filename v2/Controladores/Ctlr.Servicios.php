@@ -9,14 +9,13 @@ class Ctlr_Servicios
 		foreach ($rta as $row => $item) {
 		echo '
 		<tr>
-			<td>'.$item["id_servicio"].'</td>
 			<td>'.$item["nombre_servicio"].'</td>
 			<td>'.$item["descripcion_servicio"].'</td>
 			<td>'.$item["imagen_servicio"].'</td>
 			<td>'.$item["valor_servicio"].'</td>
 			<td>'.$item["link_contacto"].'</td>
-			<td><button class="btn btn-warning">Editar</button></td>
-			<td><button class="btn btn-danger">Eliminar</button></td>
+			<td><button class="btn btn-sm btn-warning">Editar</button></td>
+			<td><button class="btn btn-sm btn-danger">Eliminar</button></td>
 		</tr>';
 		}
 

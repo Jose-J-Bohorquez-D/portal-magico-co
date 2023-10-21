@@ -1,10 +1,8 @@
 <?php 
-session_start();
-
 if (!isset($_SESSION['sesionActivaUsu']) || $_SESSION['sesionActivaUsu'] !== true) {
     // La variable de sesión 'sesionActivaUsu' no existe o no es verdadera.
     // Puedes realizar una acción, como redirigir al usuario a la página de inicio de sesión.
-	header("location:index.php?act=inicio");
+	header("location:index.php");
 } else {
     // La variable de sesión existe y es verdadera, por lo que puedes continuar con el código para usuarios activos.
 }
@@ -12,12 +10,12 @@ if (!isset($_SESSION['sesionActivaUsu']) || $_SESSION['sesionActivaUsu'] !== tru
  ?>
 
 <div class="container-fluid">
-	<div class="container">
-		<h4 class="text-center">pagina de administracion de servicios</h4><br>
+	<div class="container-fluid">
+		<h4 class="text-center">Administracion de Servicios</h4><br>
 		<div class="row">
 			<div class="col">
 				<div class="table-responsive">
-					<table class="table">
+					<table class="table table-sm">
 						<div class="row d-flex justify-content-center">
 							<div class="col">
 								<button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#crearServicio">
@@ -47,7 +45,6 @@ if (!isset($_SESSION['sesionActivaUsu']) || $_SESSION['sesionActivaUsu'] !== tru
 						</div>
 					  <thead>
 					    <tr>
-					      <th scope="col">#</th>
 					      <th scope="col">Nombre Servicio</th>
 					      <th scope="col">Descripcion</th>
 					      <th scope="col">Ruta Imagen</th>

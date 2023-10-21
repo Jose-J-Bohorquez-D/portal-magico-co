@@ -18,6 +18,7 @@ class Ctlr_Mvc
 				$red_ctlr = "index";
 			}
 			$rta = Mdl_Mvc::redirecciones_mdl($red_ctlr);
+			#var_dump($rta);
 			include $rta;
 		}
 	}
